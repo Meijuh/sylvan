@@ -33,6 +33,9 @@ libsylvan_la_SOURCES = \
     sylvan_sl.c \
     sylvan_stats.h \
     sylvan_stats.c \
+    sylvan_tbdd.h \
+    sylvan_tbdd.c \
+    sylvan_tbdd_int.h \
     tls.h
 
 libsylvan_la_LIBADD = -lm

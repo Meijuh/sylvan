@@ -54,6 +54,8 @@ struct
     {0, 0, "Tables"},
     {1, BDD_NODES_CREATED, "MTBDD nodes created"},
     {1, BDD_NODES_REUSED, "MTBDD nodes reused"},
+    {1, TBDD_NODES_CREATED, "TBDD nodes created"},
+    {1, TBDD_NODES_REUSED, "TBDD nodes reused"},
     {1, LDD_NODES_CREATED, "LDD nodes created"},
     {1, LDD_NODES_REUSED, "LDD nodes reused"},
     {1, LLMSSET_LOOKUP, "Lookup iterations"},
@@ -92,6 +94,13 @@ struct
     {2, MTBDD_MINIMUM, "MTBDD minimum"},
     {2, MTBDD_MAXIMUM, "MTBDD maximum"},
     {2, MTBDD_EVAL_COMPOSE, "MTBDD eval_compose"},
+
+    {2, TBDD_FROM_MTBDD, "TBDD from_mtbdd"},
+    {2, TBDD_FROM_MTBDD, "TBDD to_mtbdd"},
+    {2, TBDD_BAND, "TBDD boolean and"},
+    {2, TBDD_NOT, "TBDD boolean not"},
+    {2, TBDD_ITE, "TBDD ite"},
+    {2, TBDD_EXISTS, "TBDD exists"},
 
     {2, LDD_UNION, "LDD union"},
     {2, LDD_MINUS, "LDD minus"},
