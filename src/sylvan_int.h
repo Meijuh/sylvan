@@ -90,11 +90,25 @@ extern llmsset_t nodes;
 #define CACHE_MTBDD_GREATER             (55LL<<40)
 #define CACHE_MTBDD_EVAL_COMPOSE        (56LL<<40)
 
+// TBDD operations (at most 11 bits!)
+#define CACHE_TBDD_FROM_MTBDD           (1LL<<52)
+#define CACHE_TBDD_TO_MTBDD             (2LL<<52)
+#define CACHE_TBDD_AND                  (3LL<<52)
+#define CACHE_TBDD_AND_DOM              (4LL<<52)
+#define CACHE_TBDD_ITE                  (5LL<<52)
+#define CACHE_TBDD_NOT                  (6LL<<52)
+#define CACHE_TBDD_EXISTS               (7LL<<52)
+#define CACHE_TBDD_EXTEND_DOMAIN        (8LL<<52)
+#define CACHE_TBDD_SATCOUNT             (9LL<<52)
+#define CACHE_TBDD_MERGE_DOMAINS        (10LL<<52)
+#define CACHE_TBDD_RELNEXT              (11LL<<52)
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
 
 #include <sylvan_mtbdd_int.h>
 #include <sylvan_ldd_int.h>
+#include <sylvan_tbdd_int.h>
 
 #endif

@@ -12,6 +12,7 @@ set(SOURCES
     sylvan_refs.c
     sylvan_sl.c
     sylvan_stats.c
+    sylvan_tbdd.c
 )
 
 set(HEADERS
@@ -29,6 +30,8 @@ set(HEADERS
     sylvan_mtbdd_int.h
     sylvan_obj.hpp
     sylvan_stats.h
+    sylvan_tbdd.h
+    sylvan_tbdd_int.h
     tls.h
 )
 
